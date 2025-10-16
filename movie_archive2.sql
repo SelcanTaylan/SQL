@@ -49,7 +49,3 @@ WHERE film_odul  IS NOT NULL;
 SELECT MAX(sure)- MIN(sure) AS fark FROM filmler;
 
 
--- Hayri Bey'in eleştiri yaptığı filmlerin adını getirin 
-SELECT film_ad FROM elestiriler
-JOIN filmler ON filmler.film_id = elestiriler.film_id
-WHERE elestirmen LIKE 'Hayri%';
